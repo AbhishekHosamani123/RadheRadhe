@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
 // const API_URL = 'http://localhost:5000'
-const API_URL = 'https://saarthiai.onrender.com'
+const API_URL = 'https://radheradhe-65js.onrender.com'
 
 const Chat = () => {
   const [messages, setMessages] = useState([
