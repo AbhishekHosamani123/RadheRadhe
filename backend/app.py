@@ -33,7 +33,9 @@ except Exception as e:
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend
+# CORS(app)  # Enable CORS for frontend
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://radheradhe.vercel.app"]}},
+     supports_credentials=True)
 
 # Global variable to hold Q&A system
 qa_system = None
